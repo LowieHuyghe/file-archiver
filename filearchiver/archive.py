@@ -1,5 +1,5 @@
 
-from scriptcore.console.cuiscript import CuiScript
+from scriptcore.cuiscript import CuiScript
 from filearchiver.archiver.archiver import Archiver
 from filearchiver.archiver.descriptor import Descriptor
 import os.path
