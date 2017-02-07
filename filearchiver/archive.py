@@ -4,6 +4,7 @@ from filearchiver.archiver.archiver import Archiver
 from filearchiver.archiver.descriptor import Descriptor
 import os.path
 from scriptcore.filesystem.path import Path
+from scriptcore.console.option import Option
 
 
 class Archive(CuiScript):
@@ -20,7 +21,7 @@ class Archive(CuiScript):
 
         super(Archive, self).__init__(base_path, title, description, arguments=arguments)
 
-        self._register_option('d', 'Directories to process', type='list')
+        self._register_option('d', 'Directories to process', type=Option.type_list)
 
         self._archiver = Archiver()
         self._descriptor = Descriptor()

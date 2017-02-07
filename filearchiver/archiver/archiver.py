@@ -19,6 +19,9 @@ class Archiver(object):
             raise RuntimeError('"%s" is not a directory' % directory)
 
         directory_name = os.path.basename(directory)
-        archive = Archive.zip(directory, '_%s.zip' % directory_name)
+        archive = '_%s.zip' % directory_name
+
+        if not Archive.zip(directory, archive):
+            raise RuntimeError('Failed to zip "%s"' % directory)
 
         return archive
