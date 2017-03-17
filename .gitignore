@@ -93,3 +93,7 @@ ENV/
 
 # Config
 config.ini
+
+# Google Api
+googleapi.credentials.json
+googleapi.credentials.storage
