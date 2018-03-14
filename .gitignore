@@ -97,3 +97,6 @@ config.ini
 # Google Api
 googleapi.credentials.json
 googleapi.credentials.storage
+
+# IDE
+.idea
