@@ -11,7 +11,7 @@ from oauth2client import tools
 from oauth2client.file import Storage
 from apiclient.discovery import build
 import httplib2
-from scriptcode.encoding.encoding import Encoding
+from scriptcore.encoding.encoding import Encoding
 
 
 class Archive(CuiScript):
